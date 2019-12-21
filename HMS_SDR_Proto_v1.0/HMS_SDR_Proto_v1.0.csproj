@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA63FC1A-0AD8-4270-BDDC-B3330BA5E23B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HMS_SDR_Proto_v1._0</RootNamespace>
+    <AssemblyName>HMS_SDR_Proto_v1.0</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\Bunifu_UI\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminSupplier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminSupplier.Designer.cs">
+      <DependentUpon>adminSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classconnection.cs" />
+    <Compile Include="frmAddConsumables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddConsumables.Designer.cs">
+      <DependentUpon>frmAddConsumables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddInvItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddInvItem.Designer.cs">
+      <DependentUpon>frmAddInvItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckOut.Designer.cs">
+      <DependentUpon>frmCheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExtendRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExtendRoom.Designer.cs">
+      <DependentUpon>frmExtendRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainMenu.Designer.cs">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaintenance.Designer.cs">
+      <DependentUpon>frmMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransferRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransferRoom.Designer.cs">
+      <DependentUpon>frmTransferRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tabInventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tabInventory.Designer.cs">
+      <DependentUpon>tabInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabReports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tabReports.Designer.cs">
+      <DependentUpon>tabReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabReservation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tabReservation.Designer.cs">
+      <DependentUpon>tabReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabRM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tabRM.Designer.cs">
+      <DependentUpon>tabRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabUtilities.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tabUtilities.Designer.cs">
+      <DependentUpon>tabUtilities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminUserType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminUserType.Designer.cs">
+      <DependentUpon>adminUserType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminUser.Designer.cs">
+      <DependentUpon>adminUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminActLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminActLog.Designer.cs">
+      <DependentUpon>adminActLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminRoomType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminRoomType.Designer.cs">
+      <DependentUpon>adminRoomType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminRoom.Designer.cs">
+      <DependentUpon>adminRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminStaff.Designer.cs">
+      <DependentUpon>adminStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminGuest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminGuest.Designer.cs">
+      <DependentUpon>adminGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminCategory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminCategory.Designer.cs">
+      <DependentUpon>adminCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminUnit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminUnit.Designer.cs">
+      <DependentUpon>adminUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminProduct.Designer.cs">
+      <DependentUpon>adminProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminActLog.resx">
+      <DependentUpon>adminActLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminCategory.resx">
+      <DependentUpon>adminCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminGuest.resx">
+      <DependentUpon>adminGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminProduct.resx">
+      <DependentUpon>adminProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminRoom.resx">
+      <DependentUpon>adminRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminRoomType.resx">
+      <DependentUpon>adminRoomType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminStaff.resx">
+      <DependentUpon>adminStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminSupplier.resx">
+      <DependentUpon>adminSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUnit.resx">
+      <DependentUpon>adminUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUser.resx">
+      <DependentUpon>adminUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUserType.resx">
+      <DependentUpon>adminUserType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddConsumables.resx">
+      <DependentUpon>frmAddConsumables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddInvItem.resx">
+      <DependentUpon>frmAddInvItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckOut.resx">
+      <DependentUpon>frmCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExtendRoom.resx">
+      <DependentUpon>frmExtendRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainMenu.resx">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaintenance.resx">
+      <DependentUpon>frmMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransferRoom.resx">
+      <DependentUpon>frmTransferRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="tabInventory.resx">
+      <DependentUpon>tabInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabReports.resx">
+      <DependentUpon>tabReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabReservation.resx">
+      <DependentUpon>tabReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabRM.resx">
+      <DependentUpon>tabRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabUtilities.resx">
+      <DependentUpon>tabUtilities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

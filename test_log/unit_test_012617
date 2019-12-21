@@ -1,0 +1,38 @@
+Unit Test 01-26-2017
+Test by: Erwin Plaza
+
+Module: Administrative Tools
+	Access Level - Not yet working
+	User Account - CLEARED!
+		- Names accepting numbers - FIXED!
+	Activity Logs
+		- Printing of logs not yet working
+		- PDF Conversion not yet working
+	Room Type - CLEARED!
+	Room - CLEARED!
+		- Status should be set only on the room management transaction - FIXED
+		- Incorrect duplicate room name checking - FIXED
+	Staff - CLEARED!
+		- Names accepting numbers - FIXED
+		- Accepting duplicate names - FIXED
+	Guest - CLEARED!
+		- Company is not required
+	Supplier - CLEARED!
+		- Update not working -FIXED
+	Category
+		- Can't click dgv - FIXED
+	Unit of Measurements
+		- Accepting duplicates - FIXED!
+	Product
+		- Accepting letters on prices - FIXED
+		- Accepting duplicates - FIXED
+
+Change Logs:
+	Room type new restrictions:
+	- Should not accept duplicate names
+	- Maximum capacity should not accept 0 values
+	- Checking of room type if it's used on the room maintenance before deleting
+	Room new restrictions:
+	- Checking of room status before deleting. Should not be deleted if room is OCCUPIED. 
+	Supplier, Category, Unit of Measurements new restrictions:
+	- Checking if used by a product before deleting.
